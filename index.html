@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenScape Landscaping</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+
+
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">GreenScape</div>
+
+    <div class="nav-right">
+      <a href="tel:5555555555" class="phone">(555) 555-5555</a>
+      
+    </div>
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <section class="hero fade-in">
+  <div class="container">
+    <h1>A Yard You’ll Be Proud to Come Home To</h1>
+    <p>Professional landscaping services that make your home stand out — without the stress.</p>
+
+    <a href="#contact" class="btn">Get a Free Quote</a>
+
+    <p class="hero-trust">
+      ✓ Free Estimates • ✓ Reliable Service • ✓ 100+ Happy Customers
+    </p>
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <section class="fade-in">
+  <div class="container">
+
+    <h2>Our Services</h2>
+
+    <div class="service-row">
+      <img src="images/service1.jpg" alt="">
+      <div>
+        <h3>Lawn Care</h3>
+        <p>Keep your yard clean, green, and healthy year-round with regular maintenance.</p>
+      </div>
+    </div>
+
+    <div class="service-row reverse">
+      <img src="images/service2.jpg" alt="">
+      <div>
+        <h3>Landscape Design</h3>
+        <p>Custom outdoor designs that transform your space into something you love.</p>
+      </div>
+    </div>
+
+    <div class="service-row">
+      <img src="images/service3.jpg" alt="">
+      <div>
+        <h3>Tree & Shrub Care</h3>
+        <p>Professional trimming and care to keep your yard looking sharp long-term.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- WORK -->
+  <section class="fade-in">
+  <div class="container">
+
+    <h2>Our Work</h2>
+    <p>See the difference we can make.</p>
+
+    <div class="before-after">
+
+      <div class="image-box">
+        <span class="label before">Before</span>
+        <img src="images/work1.png">
+      </div>
+
+      <div class="image-box">
+        <span class="label after">After</span>
+        <img src="images/work2.png">
+      </div>
+
+    </div>
+
+    <p class="project-caption">
+      Full yard cleanup + fresh lawn installation
+    </p>
+
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+      <h2>Ready for a Yard You’ll Love?</h2>
+      <p>Get a fast, free quote — no pressure, no commitment.</p>
+
+      <ul class="contact-benefits">
+        <li>✔ Fast & Reliable Service</li>
+        <li>✔ Affordable Pricing</li>
+        <li>✔ 100+ Happy Customers</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Tell us about your project"></textarea>
+        <button type="submit">Get My Free Quote</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.transitionDelay = "0.1s";
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
