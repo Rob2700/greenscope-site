@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -135,8 +139,16 @@ section:nth-of-type(even):not(.hero) {
 /* TRUST TEXT */
 .hero-trust {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
   font-size: 0.9rem;
   opacity: 0.9;
+}
+
+.hero-trust span {
+  white-space: nowrap;
 }
 
 .hero-content {
@@ -409,6 +421,15 @@ section p {
     font-size: 2.2rem;
   }
 
+
+  .hero-trust {
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+
+
   .hero p {
     font-size: 1rem;
     color: #ffffff;
@@ -454,10 +475,7 @@ section p {
     flex-direction: column;
     text-align: center;
   }
-  
-html, body {
-  overflow-x: hidden;
-}
+
   .contact-left {
     text-align: center;
   }
