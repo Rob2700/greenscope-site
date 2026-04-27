@@ -454,7 +454,10 @@ section p {
     flex-direction: column;
     text-align: center;
   }
-
+  
+html, body {
+  overflow-x: hidden;
+}
   .contact-left {
     text-align: center;
   }
